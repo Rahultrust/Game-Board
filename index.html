@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 2px outset palevioletred;
+            height: 50%;
+            width: 44%;
+            margin: 20px;
+            box-shadow: 1px 3px 5px 3px;
+            color: red;
+        }
+table{
+    border-collapse:collapse ;
+    font-size: 100px;
+    text-align: center;
+    background-color: aqua;
+}
+td{
+    border: 1px outset black;
+    height: 180px;
+    width: 180px;
+}
+td:hover{
+    background-color: green;
+}
+h1{
+    text-align: center;
+    font-weight: 900;
+    color: orange;
+    font-size: 30px;
+    text-transform: uppercase;
+    border: 2px solid red;
+    height: 40px;
+    width: 500px;
+    background: #234523;
+    border-top-right-radius: 45px;
+    border-bottom-left-radius: 45px;
+
+}
+    </style>
+</head>
+<body>
+    <center>
+    <h1>Tik Tok GameBoard</h1>
+    <hr>
+    <div>
+    <table id="board">
+        <tr>
+            <td onClick="sendData(0,0)"></td>
+            <td onClick="sendData(0,1)"></td>
+            <td onClick="sendData(0,2)"></td>
+        </tr>
+        <tr>
+            <td onClick="sendData(1,0)"></td>
+            <td onClick="sendData(1,1)"></td>
+            <td onClick="sendData(1,2)"></td>
+        </tr>
+        <tr>
+            <td onClick="sendData(2,0)"></td>
+            <td onClick="sendData(2,1)"></td>
+            <td onClick="sendData(2,2)"></td>
+        </tr>
+    </table>
+</div>
+</center>
+    <script src="./script.js"></script>
+</body>
+</html>
